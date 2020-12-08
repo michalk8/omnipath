@@ -176,8 +176,8 @@ class LigRecExtra(CommonParamFilter):
     """
     Request interactions from the `ligrec extra` dataset.
 
-    Imports the `dataset <https://omnipathdb.org/interactions?datasets=ligrecextra>`__ which contains ligand-receptor
-    interactions without literature reference.
+    Imports the `dataset <https://omnipathdb.org/interactions?datasets=ligrecextra>`__
+    which contains ligand-receptor interactions without literature reference.
     """
 
     def __init__(self):
@@ -383,7 +383,9 @@ class PostTranslational(AllInteractions):
     """
     Request all post-translational interactions from [OmniPath]_ .
 
-    This query requests the interactions from the following datasets:
+    Imports the `dataset <https://omnipathdb.org/interactions?datasets=omnipath,pathwayextra,kinaseextra,ligrecextra>`__
+    which contains post-transcriptional (i.e. protein-protein) interactions. This query requests the interactions from
+    the following datasets:
 
         - :attr:`omnipath.constants.InteractionDataset.OMNIPATH`
         - :attr:`omnipath.constants.InteractionDataset.PATHWAY_EXTRA`
@@ -441,6 +443,7 @@ __all__ = [
     PathwayExtra,
     AllInteractions,
     Transcriptional,
+    PostTranslational,
     TFmiRNA,
     miRNA,
     lncRNAmRNA,
